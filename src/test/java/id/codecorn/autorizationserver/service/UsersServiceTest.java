@@ -28,7 +28,6 @@ public class UsersServiceTest {
 
 		usersService.saveUser(data);
 		usersService.addRoleToUser("admin", "ROLE_ADMIN");
-
 	}
 
 }
