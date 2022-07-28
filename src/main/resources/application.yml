@@ -1,0 +1,27 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: AUHORIZATION-SERVER
+  datasource:
+    username: root
+    password: 7qvt6t2738
+    url: jdbc:mysql://localhost/dbauth
+#    url: jdbc:mysql://pudam.ip-dynamic.com:62224/dbpdamkabgor
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+  servlet:
+    multipart:
+      max-file-size: 10000KB
+      max-request-size: 10000KB
+
+app:
+  upload:
+    path: uploads
