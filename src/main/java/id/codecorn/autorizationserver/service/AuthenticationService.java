@@ -32,7 +32,7 @@ public class AuthenticationService implements AuthenticationProvider {
 					user.getPassword(),
 					user.getAuthorities());
 		} else {
-			throw new BadCredentialsException("Bad Credentials");
+			throw new BadCredentialsException("Username atau Password anda salah");
 		}
 	}
 
